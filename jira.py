@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+
+# If you clone the repo, I recommend using the script via a symlink:
+# ln -s /Users/brian/rando-scripts/jira.py /Users/brian/jira
+
 import webbrowser, sys, pyperclip
 
 sys.argv
