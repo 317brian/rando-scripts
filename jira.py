@@ -12,5 +12,5 @@ if len(sys.argv) > 1:
 else:  
   issue_number = pyperclip.paste()
 
-webbrowser.open_new_tab("https://armory.atlassian.net/browse/" + issue_number)
+webbrowser.open_new_tab("https://<company>.atlassian.net/browse/" + issue_number)
 
