@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
-# If you clone the repo, I recommend using the script via a symlink:
-# ln -s /Users/brian/rando-scripts/jira.py /Users/brian/jira
+# You can create the script manually or clone the script and use it script via a symlink:
+# For example `ln -s /Users/brian/rando-scripts/jira.py /usr/local/bin/jira`
+# Make sure you create an environment variable named JIRA_URL for your terminal, such as .zshenv.
 
-import webbrowser, sys, pyperclip
-
+import webbrowser, sys, pyperclip, os
+jira_url = os.environ['JIRA_URL']
 sys.argv
 
 if len(sys.argv) > 1:  
@@ -12,5 +13,5 @@ if len(sys.argv) > 1:
 else:  
   issue_number = pyperclip.paste()
 
-webbrowser.open_new_tab("https://<company>.atlassian.net/browse/" + issue_number)
+webbrowser.open_new_tab(jira_url + issue_number)
 
