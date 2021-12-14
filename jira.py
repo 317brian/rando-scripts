@@ -2,7 +2,7 @@
 
 # You can create the script manually or clone the script and use it script via a symlink:
 # For example `ln -s /Users/brian/rando-scripts/jira.py /usr/local/bin/jira`
-# Make sure you create an environment variable named JIRA_URL for your terminal, such as .zshenv.
+# Make sure you create an environment variable named JIRA_URL for your terminal, such as .zshenv. Set the env variable equal to https://your-jira.net/browse/
 
 import webbrowser, sys, pyperclip, os
 jira_url = os.environ['JIRA_URL']
