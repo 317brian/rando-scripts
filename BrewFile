@@ -1,0 +1,32 @@
+# 1. install command line tools: xcode-select --install  
+# 2. install homebrew: ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# 3. install bundle: brew bundle
+# 4. use the brewfile: brew bundle --file=<path to brewfile>
+
+# specify a directory to install the GUI apps
+cask_args appdir: '/Applications
+tap 'caskroom/homebrew-cask' || true
+brew 'git'
+brew 'bash-completion'
+brew 'wget'
+brew 'zsh'
+brew 'aws-cli'
+brew 'eksctl'
+brew 'kustomize'
+brew 'kubectx'
+brew "python3"
+brew "watch"
+brew 'vale'
+brew "kubernetes-cli"
+brew "kubectx"
+brew "geckodriver"
+brew "bash-completion"
+brew "go"
+# cask is for GUIs
+cask 'slack'
+cask 'spotify'
+cask 'iterm2'
+cask 'visual-studio-code'
+cask 'firefox'
+cask 'google-chrome'
+cask 'atom'
