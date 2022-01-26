@@ -3,6 +3,10 @@
 # 3. install bundle: brew bundle
 # 4. use the brewfile: brew bundle --file=<path to brewfile>
 
+# Things needed outside of the brewfile:
+# *  Install oh-my-zsh: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# * add p10k as the theme for ohmyzsh: echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+
 # specify a directory to install the GUI apps
 cask_args appdir: '/Applications
 tap 'caskroom/homebrew-cask' || true
@@ -18,10 +22,10 @@ brew "python3"
 brew "watch"
 brew 'vale'
 brew "kubernetes-cli"
-brew "kubectx"
 brew "geckodriver"
-brew "bash-completion"
 brew "go"
+brew "thefuck"
+brew romkatv/powerlevel10k/powerlevel10k
 # cask is for GUIs
 cask 'slack'
 cask 'spotify'
