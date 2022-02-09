@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+# /Users/brianle/rando-scripts/github-open-modified-files.py /usr/local/bin/ghpr
 import sys, pyperclip, os
 
 # Get the latest copy of the repo.
