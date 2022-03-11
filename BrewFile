@@ -3,14 +3,13 @@
 # 3. install bundle: brew bundle
 # 4. use the brewfile: brew bundle --file=<path to brewfile>
 
-# specify a directory to install the GUI apps
-cask_args appdir: '/Applications
-tap 'caskroom/homebrew-cask' || true
+cask_args appdir: "/Applications"
+tap 'homebrew/cask'
 brew 'git'
 brew 'bash-completion'
 brew 'wget'
 brew 'zsh'
-brew 'aws-cli'
+brew 'awscli'
 brew 'eksctl'
 brew 'kustomize'
 brew 'kubectx'
