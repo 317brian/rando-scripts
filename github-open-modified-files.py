@@ -2,6 +2,7 @@
 # /Users/brianle/rando-scripts/github-open-modified-files.py /usr/local/bin/ghpr
 import sys, pyperclip, os
 
+## Brute force method
 # Get the latest copy of the repo.
 
 os.system("git checkout master || git checkout main")
@@ -26,3 +27,6 @@ f.close()
 
 # delete file list
 os.remove("file_list.txt")
+
+
+# https://docs.github.com/en/rest/pulls/pulls#list-pull-requests-files
