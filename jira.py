@@ -14,4 +14,3 @@ else:
   issue_number = pyperclip.paste()
 
 webbrowser.open_new_tab(jira_url + issue_number)
-
